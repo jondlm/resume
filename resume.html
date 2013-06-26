@@ -9,49 +9,53 @@
   </style>
   <!-- Custom styles -->
   <style>
-    /*h1,h2,h3,h4,h5,h6,body {font-family: "Segoe UI", sans-serif;}*/
+    /*h1,h2,h3,h4,h5,h6,body {font-family: "sans-serif", sans-serif;}*/
     .container {margin-top: 20px;}
     th {font-weight: bold; padding-right: 10px;}
     ul li { margin: 3px 0 3px 0;}
     ul {list-style-type: square; margin-left: 1.5em}
     .date { margin-top: 9px;}
     .ft {width: 100%;}
-    .ft td {
-      border-collapse: collapse;
-      border: 1px solid lightgrey;
-      padding: 1px 0 1px 10px;
-      width: 33%;
-    }
+    .ft td {border-collapse: collapse; border: 1px solid lightgrey; padding: 1px 0 1px 10px; width: 33%; }
     p { margin-left: 10px;}
     .ft td:hover { background-color: #eee;}
+    .topbar {
+      background-color: rgb(236, 236, 236);
+    }
+    .container {
+      margin-top: initial;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
 
     /*div {outline: 1px solid black;}*/
   </style>
 </head>
 <body> 
+  <div class="topbar">
+    <div class="container">
+      <div class="twelve columns">
+        <h1>Jon de la Motte</h1>
+      </div>
+      <div class="four columns">
+        <table>
+          <tr>
+            <th>email</th>
+            <td>jondlm@gmail.com</td>
+          </tr>
+          <tr>
+            <th>phone</th>
+            <td>503 261 3636</td>
+          </tr>
+          <tr>
+            <th>website/blog</th>
+            <td><a href="http://jondelamotte.com">jondelamotte.com</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
   <div class="container">
-    <div class="twelve columns">
-      <h1>Jon de la Motte</h1>
-    </div>
-    <div class="four columns">
-      <table>
-        <tr>
-          <th>email</th>
-          <td>jondlm@gmail.com</td>
-        </tr>
-        <tr>
-          <th>phone</th>
-          <td>503 261 3636</td>
-        </tr>
-        <tr>
-          <th>website/blog</th>
-          <td><a href="http://jondelamotte.com">jondelamotte.com</a></td>
-        </tr>
-      </table>
-    </div>
-    <div class="sixteen columns">
-      <hr>
-    </div>
     <div class="eight columns">
       <h2>Objectives</h2>
       <ul>
