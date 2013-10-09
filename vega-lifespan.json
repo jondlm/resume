@@ -2,109 +2,261 @@
   "name": "technologies",
   "width": 400,
   "height": 236,
-  "padding": {"top": 60, "left": 5, "bottom": 30, "right": 30},
+  "padding": {
+    "top": 60,
+    "left": 5,
+    "bottom": 30,
+    "right": 30
+  },
   "data": [
     {
       "name": "people",
       "values": [
-        {"label":"Jazz Jackrabbit",  "start": 757382400000, "end": 788918400000},
-        {"label":"HyperCard", "start": 788918400000, "end": 820454400000},
-        {"label":"HTML", "start": 1104566400000, "end": 1372291435582},
-        {"label":"Photoshop", "start": 1104566400000, "end": 1199145600000}, 
-        {"label":"Java", "start": 1136073600000, "end": 1167609600000},
-        {"label":"ASP/C#", "start": 1199145600000, "end": 1293840000000},
-        {"label":"SQL Server", "start": 1293840000000, "end": 1372291435582},
-        {"label":"Microsoft BI", "start": 1293840000000, "end": 1372291435582},
-        {"label":"JavaScript", "start": 1325376000000, "end": 1372291435582},
-        {"label":"CSS", "start": 1325376000000, "end": 1372291435582},
-        {"label":"Node.js", "start": 1325376000000, "end": 1372291435582}
+        {
+          "label": "Jazz Jackrabbit",
+          "start": 757382400000,
+          "end": 788918400000
+        },
+        {
+          "label": "HyperCard",
+          "start": 788918400000,
+          "end": 820454400000
+        },
+        {
+          "label": "HTML",
+          "start": 1270332800000,
+          "end": 1378796400000
+        },
+        {
+          "label": "CSS",
+          "start": 1270332800000,
+          "end": 1378796400000
+        },
+        {
+          "label": "Photoshop",
+          "start": 1104566400000,
+          "end": 1199145600000
+        },
+        {
+          "label": "Java",
+          "start": 1136073600000,
+          "end": 1167609600000
+        },
+        {
+          "label": "ASP/C#",
+          "start": 1270332800000,
+          "end": 1285840000000
+        },
+        {
+          "label": "Microsoft BI",
+          "start": 1292640000000,
+          "end": 1364799600000
+        },
+        {
+          "label": "SQL Server",
+          "start": 1294940000000,
+          "end": 1364799600000
+        },
+        {
+          "label": "JavaScript",
+          "start": 1322376000000,
+          "end": 1378796400000
+        },
+        {
+          "label": "CSS3",
+          "start": 1325376000000,
+          "end": 1378796400000
+        },
+        {
+          "label": "Git",
+          "start": 1326576000000,
+          "end": 1378796400000
+        },
+        {
+          "label": "Node.js",
+          "start": 1329386000000,
+          "end": 1378796400000
+        }
       ]
     },
     {
       "name": "events",
-      "format": {"type":"json", "parse":{"when":"date"}},
+      "format": {
+        "type": "json",
+        "parse": {
+          "when": "date"
+        }
+      },
       "values": [
-        {"name": "Birth", "when": "4/13/1988"},
-        {"name":"First PC", "when": "1/1/1997"},
-        {"name": "Present", "when": "6/26/2013"},
-        {"name": "First real job", "when": "4/1/2005"},
-        {"name": "Graduated College", "when": "7/1/2010"}
+        {
+          "name": "Birth",
+          "when": "4/13/1988"
+        },
+        {
+          "name": "First PC",
+          "when": "1/1/1997"
+        },
+        {
+          "name": "Present",
+          "when": "9/10/2013"
+        },
+        {
+          "name": "First real job",
+          "when": "4/1/2005"
+        },
+        {
+          "name": "Graduated College",
+          "when": "7/1/2010"
+        }
       ]
     }
-
   ],
   "scales": [
     {
       "name": "y",
       "type": "ordinal",
       "range": "height",
-      "domain": {"data": "people", "field": "data.label"}
+      "domain": {
+        "data": "people",
+        "field": "data.label"
+      }
     },
     {
       "name": "x",
       "type": "time",
-      "range": [10, 400],
+      "range": [
+        10,
+        390
+      ],
       "round": true,
-      "nice": "year",
-      "domain": [1112338800000, 1370070000000]
+      "nice": "month",
+      "domain": [
+        1270332800000,
+        1378796400000
+      ]
     }
   ],
   "axes": [
-    {"type": "x", "scale": "x"}
+    {
+      "type": "x",
+      "scale": "x"
+    }
   ],
   "marks": [
     {
       "type": "text",
-      "from": {"data": "events"},
+      "from": {
+        "data": "events"
+      },
       "properties": {
         "enter": {
-          "x": {"scale": "x", "field": "data.when"},
-          "y": {"value": -16},
-          "angle": {"value": -30},
-          "fill": {"value": "#000"},
-          "text": {"field": "data.name"},
-          "font": {"value": "HelveticaNeue"},
-          "fontSize": {"value": 10}
+          "x": {
+            "scale": "x",
+            "field": "data.when"
+          },
+          "y": {
+            "value": -16
+          },
+          "angle": {
+            "value": -30
+          },
+          "fill": {
+            "value": "#000"
+          },
+          "text": {
+            "field": "data.name"
+          },
+          "font": {
+            "value": "HelveticaNeue"
+          },
+          "fontSize": {
+            "value": 10
+          }
         }
       }
     },
     {
       "type": "rect",
-      "from": {"data": "events"},
+      "from": {
+        "data": "events"
+      },
       "properties": {
         "enter": {
-          "x": {"scale": "x", "field": "data.when"},
-          "y": {"value": -10},
-          "width": {"value": 1},
-          "height": {"value": 244},
-          "fill": {"value": "#ddd"}
+          "x": {
+            "scale": "x",
+            "field": "data.when"
+          },
+          "y": {
+            "value": -10
+          },
+          "width": {
+            "value": 1
+          },
+          "height": {
+            "value": 244
+          },
+          "fill": {
+            "value": "#ddd"
+          }
         }
       }
     },
     {
       "type": "text",
-      "from": {"data": "people"},
+      "from": {
+        "data": "people"
+      },
       "properties": {
         "enter": {
-          "x": {"scale": "x", "field": "data.start"},
-          "y": {"scale": "y", "field": "data.label", "offset": -3},
-          "fill": {"value": "#777"},
-          "text": {"field": "data.label"},
-          "font": {"value": "Helvetica Neue"},
-          "fontSize": {"value": 12}
+          "x": {
+            "scale": "x",
+            "field": "data.start"
+          },
+          "y": {
+            "scale": "y",
+            "field": "data.label",
+            "offset": -3
+          },
+          "fill": {
+            "value": "#777"
+          },
+          "text": {
+            "field": "data.label"
+          },
+          "font": {
+            "value": "Helvetica Neue"
+          },
+          "fontSize": {
+            "value": 12
+          }
         }
       }
     },
     {
       "type": "rect",
-      "from": {"data": "people"},
+      "from": {
+        "data": "people"
+      },
       "properties": {
         "enter": {
-          "x": {"scale": "x", "field": "data.start"},
-          "x2": {"scale": "x", "field": "data.end"},
-          "y": {"scale": "y", "field": "data.label"},
-          "height": {"value": 2},
-          "fill": {"value": "#557"}
+          "x": {
+            "scale": "x",
+            "field": "data.start"
+          },
+          "x2": {
+            "scale": "x",
+            "field": "data.end"
+          },
+          "y": {
+            "scale": "y",
+            "field": "data.label"
+          },
+          "height": {
+            "value": 2
+          },
+          "fill": {
+            "value": "#557"
+          }
         }
       }
     }
