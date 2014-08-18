@@ -4,7 +4,8 @@ Full stack web developer
 
 Email:        jondlm@gmail.com  
 Phone:        503-261-3636  
-Website/blog: jondelamotte.com
+Website/blog: jondelamotte.com  
+Github:       jondlm
 
 ## Summary
 
@@ -37,6 +38,7 @@ well.
 - Data Visualization
 - Gulp and grunt
 - Unit testing
+- Elasticsearch querying
 
 ### Server-side
 
@@ -48,7 +50,6 @@ well.
 - Mongo
 - Redis
 - Etcd
-- Ansible
 - CentOS and Ubuntu administration
 
 ### People-side
@@ -63,16 +64,15 @@ well.
 
 Feb 2014 - Present
 
-Built a web application to manage the company's thousands of internet connected
-Android devices in the field around the US. The web app is written in
-Angular and backed by Node and a Java API. It uses several technologies:
+Built a web application to manage thousands of internet connected Android
+devices in the field around the US. The web app is written in Angular and
+backed by Node and a Java API. It uses several technologies:
 
-- Node
+- Node & [Hapi][hapi]
 - Gulp
-- Less
-- Bootstrap
 - Angular
-- The [Hapi][hapi] framework
+- Bootstrap with custom Less extensions
+- Elasticsearch
 
 Rebuilt the company's EC2 infrastructure by implementing Ansible to build and
 mange all servers on the CentOS Linux distribution. This enabled the company,
@@ -109,8 +109,8 @@ side JavaScript to create rich interaction and data filtering. The proof of
 concept real-time [dashboard][dsh] is available online. It uses AJAX,
 JavaScript, and plenty of JSON over HTTP.
 
-Moving web development forward at CSG by educating peers and introducing
-client-side MVC and CSS frameworks to client projects.
+Moved web development forward at CSG by educating peers and introducing
+client-side MVC and CSS frameworks to projects.
 
 [csg]: http://csgpro.com/
 [code]: http://github.com/csgpro/website
@@ -127,18 +127,20 @@ to supply chain management, logistics, political canvassing, manufacturing, and
 distribution. Improved internal reporting and visibility for CSG through a
 series of automated reports and ETL processes.
 
-### Service & Support Reports Analyst Intern at The Standard
+### Service & Support Reports Analyst Intern at [The Standard][standard]
 
 Jun 2010 – Aug 2010 and Jun 2009 – Sep 2009
 
-Worked two summers as an intern doing reporting for an infrastructure
-department. Worked with an Oracle database and Crystal Reports extracting and
-organizing data to inform and enable management decision making.
+Worked two summers while in college as an intern doing reporting for an
+infrastructure department. Worked with an Oracle database and Crystal Reports
+extracting and organizing data to inform management decision making.
 
 Continued the project from the previous year. Contributed to several process
 mapping and improvement endeavors. Also assisted with a project to improve the
 transparency and report-ability of the implementation of controls within the IT
 department.
+
+[standard]: https://www.standard.com/
 
 ## Education
 
